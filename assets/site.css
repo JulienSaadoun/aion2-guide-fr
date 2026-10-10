@@ -35,8 +35,8 @@ h2{margin:0;font-size:24px} h3{font-size:17px;margin:20px 0 8px;color:#f3d9db}
 .callout.red{border-color:var(--bad);background:rgba(224,82,92,.08)}
 .callout.green{border-color:var(--ok);background:rgba(76,195,138,.08)}
 .callout.blue{border-color:var(--blue);background:rgba(106,168,255,.08)}
-.sk{display:inline-flex;align-items:center;gap:5px;font-weight:600;white-space:normal}
-.sk img{width:22px;height:22px;border-radius:5px;border:1px solid #3a4250;vertical-align:middle;flex:none}
+.sk{display:inline;font-weight:600}
+.sk img{width:22px;height:22px;border-radius:5px;border:1px solid #3a4250;vertical-align:-6px;margin-right:5px}
 .sk .en{font-weight:400;color:var(--muted)}
 .nc{color:var(--warn);font-weight:700}
 .skill{display:flex;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
@@ -71,10 +71,13 @@ footer .in{max-width:1100px;margin:auto;padding:18px}
 .classcard:hover{border-color:var(--accent);text-decoration:none}
 .classcard img{width:64px;height:64px;border-radius:12px}
 @media (max-width:860px){
-  .wrap{grid-template-columns:1fr;gap:12px}
+  .wrap{grid-template-columns:minmax(0,1fr);gap:12px;padding:16px 12px 50px}
+  .grid{grid-template-columns:minmax(0,1fr)}
+  .hero p{font-size:14px}
   .toc{position:static;max-height:none}
   .hero h1{font-size:30px} .hero .in{padding:24px 16px}
   .hero .emblem{width:60px;height:60px}
   .top nav{display:none}
   body{font-size:15.5px}
 }
+.card>p:first-child{margin-top:0}.card>p:last-child{margin-bottom:0}
